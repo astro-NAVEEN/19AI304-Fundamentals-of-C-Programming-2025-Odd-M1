@@ -26,7 +26,37 @@ To build a C program that prints integer, float,character, and string literals o
 ### Step 4: 
    Stop
 # Program:
+#include <stdio.h>
+
+int main()
+{
+    int i = 10;
+    float f = 3.14f;
+    char c = 'A';
+    char s[] = "Hello C";
+
+    printf("Integer literal: %d\n", i);
+    printf("Size of integer: %zu bytes\n\n", sizeof(i));
+
+    printf("Float literal: %f\n", f);
+    printf("Size of float: %zu bytes\n\n", sizeof(f));
+
+    printf("Character literal: %c\n", c);
+    printf("Size of character: %zu byte\n\n", sizeof(c));
+
+    printf("String literal: %s\n", s);
+    printf("Size of string: %zu bytes\n", sizeof(s));
+
+    return 0;
+}
+
 # Output:
+
+
+
+<img width="432" height="530" alt="Screenshot 2025-12-27 160856" src="https://github.com/user-attachments/assets/0355a851-8b9d-4881-8b70-06c8c76a28dc" />
+
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -57,7 +87,25 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 6:  
   Stop
 # Program:
+#include <stdio.h>
+
+#define PI 3.14159
+
+int main()
+{
+    const int DAYS = 7;
+
+    printf("Macro constant PI = %f\n", PI);
+    printf("Constant variable DAYS = %d\n", DAYS);
+
+    return 0;
+}
+
 # Output:
+
+
+<img width="445" height="329" alt="Screenshot 2025-12-27 161523" src="https://github.com/user-attachments/assets/25c3c420-e031-4fff-bc2c-6b42d3624801" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -81,8 +129,31 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 5:    
    Stop
 # Program:
+#include <stdio.h>
+
+int main()
+{
+    int a = 25;
+    float b = 5.75f;
+    double c = 12.3456;
+    char d = 'C';
+
+    printf("Integer value: %d\n", a);
+    printf("Float value: %f\n", b);
+    printf("Double value: %lf\n", c);
+    printf("Character value: %c\n", d);
+
+    return 0;
+}
+
 # Output:
+
+
+<img width="385" height="336" alt="Screenshot 2025-12-27 162004" src="https://github.com/user-attachments/assets/2d71d0c0-9b26-4477-a03f-bc5e18a69879" />
+
 # Result: 
+Thus, the program was implemented and executed successfully, and the required output was obtained.
+
 
 # 19AI304-Fundamentals-of-C-Programming-2025-Odd
 # IAPR-1- Module 1 - FoC
@@ -120,7 +191,37 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+#include <stdio.h>
+
+int main()
+{
+    int a, b;
+
+    printf("Enter two integers: ");
+    scanf("%d %d", &a, &b);
+
+    printf("Addition: %d\n", a + b);
+    printf("Subtraction: %d\n", a - b);
+    printf("Multiplication: %d\n", a * b);
+    printf("Division: %d\n", a / b);
+    printf("Remainder: %d\n", a % b);
+
+    printf("Bitwise AND: %d\n", a & b);
+    printf("Bitwise OR: %d\n", a | b);
+    printf("Bitwise XOR: %d\n", a ^ b);
+    printf("Left Shift (a << b): %d\n", a << b);
+    printf("Right Shift (a >> b): %d\n", a >> b);
+    printf("Bitwise NOT of a: %d\n", ~a);
+    printf("Bitwise NOT of b: %d\n", ~b);
+
+    return 0;
+}
+
 # Output:
+
+
+<img width="405" height="542" alt="Screenshot 2025-12-27 162416" src="https://github.com/user-attachments/assets/51b36b6a-d462-4813-82d4-51f9cca465ab" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -165,7 +266,30 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+#include <stdio.h>
+
+int main()
+{
+    char ch;
+
+    printf("Enter a character: ");
+    scanf("%c", &ch);
+
+    (ch >= '0' && ch <= '9') ? printf("Digit") :
+    ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')) ?
+    ((ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'||ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U') ?
+    printf("Vowel") : printf("Consonant")) :
+    printf("Special Symbol");
+
+    return 0;
+}
+
 # Output:
+
+
+<img width="484" height="348" alt="Screenshot 2025-12-27 162521" src="https://github.com/user-attachments/assets/da4099e8-b10a-4a63-9578-235af3d0eeb1" />
+
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
